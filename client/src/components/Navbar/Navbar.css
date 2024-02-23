@@ -1,0 +1,27 @@
+.container-nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #131111;
+    max-width: 140rem;
+    padding: 2.4rem 2.4rem 0 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 4%;
+    /* border: 2px solid red; */
+}
+
+.logo{
+    border-radius: 50%;
+}
+ul{
+    display: flex;
+    gap: 3.2rem;
+  }
+
+nav{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
