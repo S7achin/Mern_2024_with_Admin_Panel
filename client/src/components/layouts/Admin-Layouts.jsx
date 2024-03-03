@@ -30,10 +30,10 @@ export const AdminLayouts = () => {
             {/* <div className="container"> */}
                 <nav className='side-bar'>
                     <ul>
-                        <li><NavLink to="/admin/users"><FaUser className="icon"/>users</NavLink></li>
-                        <li><NavLink to="/admin/contacts"><FaMessage className="icon"/>contacts</NavLink></li>
-                        <li><NavLink to="/admin/services"><FaRegListAlt className="icon"/>services</NavLink></li>
-                        <li><NavLink to="/"><FaHome className="icon"/>Home</NavLink></li>
+                        <li><NavLink className={(e)=>{return e.isActive? "red": ""}} to="/admin/users"><FaUser className="icon"/>users</NavLink></li>
+                        <li><NavLink className={(e)=>{return e.isActive? "red": ""}} to="/admin/contacts"><FaMessage className="icon"/>contacts</NavLink></li>
+                        <li><NavLink className={(e)=>{return e.isActive? "red": ""}} to="/admin/services"><FaRegListAlt className="icon"/>services</NavLink></li>
+                        <li><NavLink className={(e)=>{return e.isActive? "red": ""}} to="/"><FaHome className="icon"/>Home</NavLink></li>
                     </ul>
                 </nav>
             {/* </div> */}

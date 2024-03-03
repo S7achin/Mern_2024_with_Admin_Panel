@@ -113,6 +113,7 @@ button {
 button:hover{
   box-shadow: inset 0 0 0 0.2rem var(--bg-color);
 }
+
 .btn{
   display: inline;
 }
@@ -126,9 +127,10 @@ button:hover{
   background-color: green;
 }
 
-.red{
-  background-color: rgb(219, 39, 39);
-}
+/* .red{
+  color:red;
+} */
+
 .mb-5{
   margin-bottom: 5rem;
 }
@@ -257,10 +259,10 @@ button:hover {
   /* border: 0.2rem solid #fff; */
 }
 
-a:hover,
+/* a:hover,
 a.active {
   color: #535bf2;
-}
+} */
 
 /* pseduo elements  */
 .main-heading {
@@ -475,11 +477,30 @@ a.active {
   }
 }
 
-@media (width <= 798px) {
+@media (width <= 925px) {
+
   html {
     font-size: 56.25%;
   }
 
+}
+
+@media (width <= 798px) {
+
+  .section-analytics{
+    & .container{
+      width: 72%;
+    }
+  }
+  .section-hero{
+    & .container{
+      width: 85%;
+      & img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
   .section-registration {
     & .container {
       & .reg-img img {
@@ -497,7 +518,45 @@ a.active {
   }
 }
 
+@media (width <= 770px) {
 
+  .section-analytics{
+    & .container{
+      width: 80%;
+    }
+  }
+
+  .section-hero{
+    & .container{
+      /* width: 85%; */
+      & .reg-img img {
+        width: 40%;
+        height: auto;
+      }
+    }
+  }
+
+}
+
+@media (width <= 690px) {
+  .grid-four-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-analytics{
+    & .container{
+      width: 75%;
+    }
+  }
+}
+
+@media (width <= 430px) {
+  .section-hero{
+    & .container {
+      width: 100%;
+    }
+  }
+    
+}
 
 
 /* REACT CSS */
